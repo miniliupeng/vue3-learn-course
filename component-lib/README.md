@@ -67,3 +67,18 @@ DOM。
 定义默认支持的数据表单组件；
 支持自定义表单字段的校验规则；
 支持根据统一 API 扩展自定义表单数据组件。
+
+## 代码单元测试
+
+vitest， 是 Vitest 测试工具核心模块，提供了单元测试管理和断言等工具；
+@vue/test-utils，是 Vue.js 测试工具，辅助处理 Vue.js 在 Node.js 环境里操作 DOM 渲染
+和 DOM 事件等操作；
+@vitejs/plugin-vue，是 Vitest 的插件，支持直接构建运行 Vue.js 模板代码；
+@vitejs/plugin-vue-jsx，是 Vitest 的插件，支持直接构建运行 Vue.js 的 JSX 代码；
+jsdom，用来在 Node.js 环境中模拟浏览器的原生 API，例如操作 DOM 的原生 API 等。
+
+
+渲染测试场景；
+行为测试场景；
+请求测试场景；
+兜底测试场景
