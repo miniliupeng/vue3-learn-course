@@ -9,5 +9,19 @@ import Header from './header';
 import Footer from './footer';
 import Content from './content';
 import Sider from './sider';
+import Form from './form';
 
-export { Button, Box, Message, Dialog, Col, Row, Layout, Header, Footer, Content, Sider };
+export {
+  Button,
+  Box,
+  Message,
+  Dialog,
+  Col,
+  Row,
+  Layout,
+  Header,
+  Footer,
+  Content,
+  Sider,
+  Form
+};
