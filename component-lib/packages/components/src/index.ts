@@ -1,27 +1,32 @@
-import Button from './button';
 import Box from './box';
-import Message from './message';
+import Button from './button';
 import Dialog from './dialog';
+import Message from './message';
 import Col from './col';
 import Row from './row';
 import Layout from './layout';
 import Header from './header';
-import Footer from './footer';
 import Content from './content';
+import Footer from './footer';
 import Sider from './sider';
 import Form from './form';
+import DynamicForm from './dynamic-form';
+
+export type { FormInstance } from './form';
+export type { DynamicFormField } from './dynamic-form';
 
 export {
-  Button,
   Box,
-  Message,
+  Button,
   Dialog,
   Col,
   Row,
+  Message,
   Layout,
   Header,
-  Footer,
   Content,
+  Footer,
   Sider,
-  Form
+  Form,
+  DynamicForm
 };
