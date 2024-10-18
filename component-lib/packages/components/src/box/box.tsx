@@ -1,4 +1,5 @@
 import { defineComponent } from 'vue';
+import { prefixName } from '../theme/index';
 
 export const Box = defineComponent({
   props: {
@@ -6,7 +7,11 @@ export const Box = defineComponent({
   },
   setup(props, { slots }) {
     return () => {
-      return <div>{slots?.default?.()}</div>;
+      return (
+        <div class={`${prefixName}-box ${props.class || ''}`}>
+          {slots?.default?.()}
+        </div>
+      );
     };
   }
 });
