@@ -31,31 +31,3 @@ CommonJS 模块格式、组件按需加载等操作
 
 
 pnpm 9.x后 link-workspace-packages改为了默认为 false，需要新建.npmrc文件，添加link-workspace-packages=true，在安装依赖时优先在本地链接，而不是从 registry（远程） 中下载
-
-
-## 快速启动
-
-```sh
-# 使用 pnpm 来管理项目
-pnpm i
-```
-
-## 开发模式
-
-### 基础组件开发模式
-
-```sh
-npm run dev:components
-```
-
-### 业务组件开发模式
-
-```sh
-npm run dev:business
-```
-
-## 生产模式
-
-```sh
-npm run build
-```
