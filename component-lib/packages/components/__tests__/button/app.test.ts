@@ -1,7 +1,7 @@
 import { describe, test, expect } from 'vitest';
 import { createApp, nextTick } from 'vue';
 import AppTest from './app.test.vue';
-
+// 兜底测试场景
 describe('Button', () => {
   test('click event', async () => {
     const div = document.createElement('div');
@@ -11,7 +11,7 @@ describe('Button', () => {
     const textDOM = div.querySelector('.display-text');
     const btnDOM = div.querySelector('.btn-add');
     expect(textDOM?.textContent).toBe('当前数值=123');
-    btnDOM?.dispatchEvent(new CustomEvent('click', { bubbles: true }));
+    btnDOM?.dispatchEvent(new Event('click', { bubbles: true }));
     await nextTick();
     expect(textDOM?.textContent).toBe('当前数值=124');
   });

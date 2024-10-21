@@ -5,7 +5,7 @@
 import { describe, test, expect } from 'vitest';
 import { mount, flushPromises } from '@vue/test-utils';
 import { Image } from '../../src';
-
+// 请求测试场景
 window.document.createElement = (function (create) {
   return function () {
     // @ts-ignore
@@ -14,9 +14,9 @@ window.document.createElement = (function (create) {
       setTimeout(() => {
         const src = element.getAttribute('src');
         if (src?.includes('error.jpg')) {
-          element.dispatchEvent(new CustomEvent('error', { bubbles: true }));
+          element.dispatchEvent(new Event('error', { bubbles: true }));
         } else {
-          element.dispatchEvent(new CustomEvent('load', { bubbles: true }));
+          element.dispatchEvent(new Event('load', { bubbles: true }));
         }
       }, 100);
     }

@@ -2,7 +2,7 @@ import { describe, test, expect } from 'vitest';
 import { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
 import ButtonTest from './index.test.vue';
-
+// 行为测试场景
 describe('Button', () => {
   test('click event', async () => {
     const wrapper = mount(ButtonTest, { props: { num: 123 } });
