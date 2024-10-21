@@ -1,7 +1,7 @@
 <template>
   <Box class="my-biz-counter">
     <Box class="num-value">{{ num }}</Box>
-    <Button @click="onClick">点击减1</Button>
+    <Button @click="onClick">点击加1</Button>
   </Box>
 </template>
 
