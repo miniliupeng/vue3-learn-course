@@ -11,6 +11,7 @@ import Footer from './footer';
 import Sider from './sider';
 import Form from './form';
 import DynamicForm from './dynamic-form';
+import Image from './image';
 
 export type { FormInstance } from './form';
 export type { DynamicFormField } from './dynamic-form';
@@ -28,5 +29,6 @@ export {
   Footer,
   Sider,
   Form,
-  DynamicForm
+  DynamicForm,
+  Image
 };
