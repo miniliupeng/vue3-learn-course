@@ -12,7 +12,7 @@ import pluginVueJsx from '@vitejs/plugin-vue-jsx';
       port: 8002,
       proxy: {
         '/page': 'http://127.0.0.1:8001/',
-        '^/$': 'http://127.0.0.1:8001/'
+        '/api': 'http://127.0.0.1:8001/'
       }
     }
   });
